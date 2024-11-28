@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "SF-Pro-regular";
+  src: url(assets/fonts/SF-Pro-Rounded-Medium.otf);
+}
+
+@font-face {
+  font-family: "SF-Pro-thin";
+  src: url(assets/fonts/SF-Pro-Rounded-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF-Pro", sans-serif;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+header {
+  padding: 2px 8px;
+  height: 1px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 8px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-bottom: 12px;
+}
+
+.box-section {
+  padding: 8px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 60% 40%;
+}
+.box-about {
+  position: relative;
+  background-color: #eeeeee; /* Fundo claro */
+  display: flex;
+  padding: 32px;
+  color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+/* Círculo laranja */
+.box-about::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  background-color: #eac267;
+  border-radius: 50%;
+  top: -20px;
+  right: -100px;
+  filter: blur(40px);
+  opacity: 0.6;
+}
+
+/* Círculo verde */
+.box-about::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-color: #62b2d6;
+  border-radius: 50%;
+  bottom: -60px;
+  right: -80px;
+  filter: blur(40px);
+  opacity: 0.6;
+}
+
+.box-about h1 {
+  font-size: 39px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  font-family: "SF-Pro-thin";
+  z-index: 999;
+  padding-right: 30%;
+}
+
+.box-about p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #5e5c5c;
+  z-index: 999;
+}
+
+.contact-group {
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  gap: 54px;
+  margin-top: 16px;
+}
+.contact-group button {
+  padding: 8px 22px;
+  background-color: #242424;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+.contact-group button:hover {
+  background-color: #3b3b3b;
+  transform: scale(1.1);
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.linkedin {
+  height: 26px;
+  transition: all 0.3s;
+}
+
+.linkedin:hover {
+  transform: scale(1.2);
+}
+
+.box-me {
+  width: 100%;
+  height: 500px;
+  min-height: 400px;
+  border-radius: 12px;
+  background-image: url("/assets/me.png");
+  background-size: cover;
+  backdrop-filter: opacity(25%);
+}
+
+.box-works {
+  display: grid;
+  grid-template-columns: 50% 49%;
+  gap: 8px;
+}
+
+.box-works div {
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 400px;
+}
+
+.work-1 {
+  background-color: #62b1d6e0;
+}
+
+.work-2 {
+  background-color: #eac267;
+}
+
+@media only screen and (max-width: 800px) {
+  .box-section {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .box-about {
+    padding: 24px;
+  }
+  .box-about h1 {
+    font-size: 22px;
+  }
+
+  .box-about p {
+    font-size: 14px;
+  }
+  .box-about::before {
+    width: 200px;
+    height: 300px;
+    top: unset;
+    bottom: 80px;
+    right: -130px;
+  }
+  .box-about::after {
+    width: 200px;
+    height: 300px;
+    bottom: -150px;
+    right: 50px;
+  }
+  .box-me {
+    height: 200px;
+  }
+}
