@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #e6e6e6;
+  background-color: #2c2c2c;
 }
 
 header {
@@ -294,7 +294,7 @@ strong {
 }
 
 .dotted-div {
-  border-bottom: 5px dotted #c2c2c2;
+  border-bottom: 5px dotted #3b3b3b;
   margin: 16px 0;
 }
 .loupen-container {
