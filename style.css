@@ -292,12 +292,24 @@ strong {
   padding: 16px;
   margin-top: 16px;
 }
+
+.dotted-div {
+  border-bottom: 5px dotted #c2c2c2;
+  margin: 16px 0;
+}
+.loupen-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+}
 .loupen-box {
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 50%;
+  width: 100%;
   background-color: #f1f1f1;
   border-radius: 12px;
 }
@@ -312,13 +324,20 @@ strong {
   color: #5e5c5c;
 }
 
+.paybrokers-container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  padding-top: 0px;
+}
 .paybrokers-box {
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
   background-color: #f3f3f3;
   border-radius: 12px;
   margin-top: 8px;
@@ -342,13 +361,21 @@ strong {
   margin-left: 8px;
 }
 
+.pdv-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  padding-top: 0px;
+}
+
 .pdv-box {
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 50%;
-  margin-left: 50%;
+  width: 100%;
   background-color: #f3f3f3;
   border-radius: 12px;
   margin-top: 8px;
@@ -417,5 +444,17 @@ strong {
   }
   .paybrokers-box ul {
     margin-left: 12px;
+  }
+  .loupen-container {
+    grid-template-columns: 1fr;
+  }
+  .paybrokers-container {
+    grid-template-columns: 1fr;
+  }
+  .pdv-container {
+    grid-template-columns: 1fr;
+  }
+  .dotted-div {
+    display: none;
   }
 }
