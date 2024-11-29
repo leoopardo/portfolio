@@ -1,0 +1,10 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Leonardo Araujo",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/edge": "^1.1.2"
+  }
+}
