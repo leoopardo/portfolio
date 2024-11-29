@@ -25,6 +25,13 @@ header {
   height: 1px;
 }
 
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -270,6 +277,92 @@ header {
   height: 90%;
 }
 
+.backoffice {
+  height: 90%;
+  width: 105%;
+  margin-left: -16px;
+  opacity: 0.8;
+}
+strong {
+  background-color: #eac267;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.exp {
+  padding: 16px;
+  margin-top: 16px;
+}
+.loupen-box {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 50%;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+}
+
+.loupen-box strong {
+  width: 200px;
+}
+
+.loupen-box .date-range {
+  font-size: 14px;
+  font-weight: 200;
+  color: #5e5c5c;
+}
+
+.paybrokers-box {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 50%;
+  margin-left: 25%;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+.paybrokers-box .date-range {
+  font-size: 14px;
+  font-weight: 200;
+  color: #5e5c5c;
+}
+.paybrokers-box strong {
+  width: 200px;
+}
+
+.paybrokers-box ul {
+  list-style: square;
+  display: flex;
+  gap: 4px 32px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.pdv-box {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 50%;
+  margin-left: 50%;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+.pdv-box ul {
+  list-style: square;
+  display: flex;
+  gap: 4px 32px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
 @media only screen and (max-width: 800px) {
   .box-section {
     flex-direction: column;
@@ -310,5 +403,15 @@ header {
   .box-habilities {
     flex-direction: column;
     grid-template-columns: 1fr;
+  }
+  .loupen-box {
+    width: 100%;
+  }
+  .paybrokers-box {
+    width: 100%;
+    margin-left: 0;
+  }
+  .paybrokers-box ul {
+    margin-left: 12px;
   }
 }
